@@ -8,6 +8,7 @@ export default {
  ],
  theme: {
   extend: {
+   scrollBehavior: ["smooth"],
    primary: {
     light: "#C1D7FF",
     DEFAULT: "#4C81F1",

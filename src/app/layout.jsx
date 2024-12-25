@@ -1,6 +1,6 @@
 
 import "./globals.css";
-import Navbar from "./components/Navbar";
+import Navbar from "../components/Navbar";
 
 export const metadata = {
  title: "CODEVORA - HOME",
@@ -10,7 +10,7 @@ export const metadata = {
 export default function RootLayout({children}) {
  return (
   <html lang="en">
-   <body className="bg-white text-black text-center">
+   <body className="bg-white">
     <Navbar />
     {children}
    </body>
