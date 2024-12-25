@@ -12,6 +12,7 @@ export default {
     light: "#C1D7FF",
     DEFAULT: "#4C81F1",
     dark: "#0D3B66",
+    biru: "#516091",
    },
   },
  },

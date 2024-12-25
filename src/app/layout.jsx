@@ -1,8 +1,9 @@
+
 import "./globals.css";
 import Navbar from "./components/Navbar";
 
 export const metadata = {
- title: "Cafetaria Order Page",
+ title: "CODEVORA - HOME",
  description: "Order Makananmu Tanpa Ribet Lagi!",
 };
 
