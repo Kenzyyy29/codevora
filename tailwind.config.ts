@@ -8,12 +8,13 @@ export default {
  ],
  theme: {
   extend: {
-   scrollBehavior: ["smooth"],
-   primary: {
-    light: "#C1D7FF",
-    DEFAULT: "#4C81F1",
-    dark: "#0D3B66",
-    biru: "#516091",
+   colors: {
+    primary: "#354da1",
+    secondary: "#59668a",
+    tulang: "#f4f4f4",
+   },
+   fontFamily: {
+    DejaVu: ["var(--font-dejavu)"],
    },
   },
  },
