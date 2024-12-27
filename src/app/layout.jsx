@@ -1,6 +1,7 @@
 import "./globals.css";
 import localfont from "next/font/local";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const DejaVu = localfont({
  src: [
@@ -26,6 +27,7 @@ export default function RootLayout({children}) {
    <body className="bg-white">
     <Navbar />
     {children}
+    <Footer />
    </body>
   </html>
  );

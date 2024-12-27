@@ -16,7 +16,7 @@ export default function Home() {
      anda berkembang?
      <span className="font-bold">#CodevorainAja</span>{" "}
     </p>
-    <button className="bg-gradient-to-r from-primary to-secondary border-lg shadow-md text-white py-2 px-5 mt-7 rounded hover:bg-gray-800">
+    <button className="bg-gradient-to-r from-primary to-secondary border-lg shadow-md text-white py-2 px-5 mt-7 rounded">
      Apa itu Codevora?
     </button>
     <img
@@ -35,24 +35,31 @@ export default function Home() {
    <section className="bg-primary text-center py-10 h-screen">
     <div className="text-tulang lg:text-4xl text-2xl font-semibold">
      COMPANY PROFILES
+     <img
+      src="/Codevora Logo.png"
+      className="lg:w-40 w-24 mx-auto lg:mt-16 mt-8"
+     />
+     <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className="size-10 mx-auto mt-6">
+      <path
+       strokeLinecap="round"
+       strokeLinejoin="round"
+       d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3"
+      />
+     </svg>
+     <div className="mx-auto mt-6">APA ITU CODEVORA?</div>
     </div>
-    <img
-     src="/Codevora Logo.png"
-     className="lg:w-40 w-24 mx-auto lg:mt-16 mt-8"
-    />
    </section>
 
-   {/*About Page */}
+   {/*Looking Page */}
    <section className="bg-tulang text-center py-10 h-screen">
     <div className="text-primary lg:text-4xl text-2xl font-semibold">
      WHAT ARE WE LOOKING FOR?
-    </div>
-   </section>
-
-   {/*Footer */}
-   <section className="text-center py-56 bg-gradient-to-r from-primary to-secondary text-white bg-transparent-lg rounded-t-2xl">
-    <div className="text-tulang lg:text-4xl text-2xl font-semibold">
-     Contact Us
     </div>
    </section>
   </div>

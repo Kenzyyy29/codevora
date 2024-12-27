@@ -4,8 +4,10 @@ import Link from "next/link";
 
 export default function Footer() {
  return (
-  <footer className="sticky z-10 bottom-0 py-40 w-full bg-gradient-to-r from-primary to-secondary text-white bg-transparent-lg rounded-t-2xl">
-   
+  <footer className="flex items-center justify-center h-96 bg-gradient-to-r from-primary to-secondary border-lg shadow-md text-white">
+   <p className="text-sm">
+    &copy; {new Date().getFullYear()} Codevora. All rights reserved.
+   </p>
   </footer>
  );
 }
