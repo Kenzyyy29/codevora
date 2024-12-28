@@ -2,12 +2,13 @@
 
 import Image from "next/image";
 import "./globals.css";
+<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 
 export default function Home() {
- return (
+ return (   
   <div className="">
    {/* Home Page */}
-   <section className="bg-tulang text-center lg:py-80 xl:py-80 py-[70%] h-screen">
+   <section className="bg-tulang text-center lg:py-[40%] 2xl:py-[80%] py-[70%] h-screen">
     <h1 className="xl:text-8xl lg:text-7xl md:text-6xl text-5xl font-extrabold bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent">
      CODEVORA{""}
     </h1>
@@ -22,7 +23,7 @@ export default function Home() {
     <img
      src="/Codevora left.png"
      alt="gambar-kiri"
-     className="xl:w-[20%] w-[60%] opacity-10 absolute top-24 left-0"
+     className="xl:w-[30%] 2xl:w-[20%] w-[60%] opacity-10 absolute top-24 left-0"
     />
     <img
      src="/Codevora right.png"
