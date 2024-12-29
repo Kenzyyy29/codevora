@@ -32,7 +32,7 @@ export default function RootLayout({children}) {
  return (
   <html
    lang="en"
-   className={"${DejaVu.variable} !scroll-smooth !scroll-p-14"}>
+   className={"${DejaVu.variable}"}>
    <body className="bg-white">
     {!disableNavbar.includes(pathname) && <Navbar />}
     {children}
