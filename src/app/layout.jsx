@@ -6,10 +6,11 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import {MetaData} from "next";
 import Link from "next/link";
-import {usePathname} from "next/navigation";
+import {usePathname, useRouter} from "next/navigation";
 import {React, useEffect} from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
 
 const disableNavbar = ["/kemitraan"];
 const disableFooter = ["/kemitraan"];
@@ -40,6 +41,7 @@ export default function RootLayout({children}) {
   }, []);
  }
  const pathname = usePathname();
+ const Router = useRouter();
  return (
   <html
    lang="en"

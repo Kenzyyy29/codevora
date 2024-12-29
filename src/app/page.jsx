@@ -3,20 +3,31 @@
 import Image from "next/image";
 import "./globals.css";
 import Link from "next/link";
+import {usePathname, useRouter} from "next/navigation";
 
 export default function Home() {
+ const Router = useRouter();
  return (
   <div>
-   <section className="bg-tulang text-start py-[70%] lg:py-[8%] 2xl:py-[16%] h-screen mx-10">
-    <h1 data-aos="fade-right" className="mt-4 text-primary font-bold 2xl:text-xl lg:text-4xl text-sm">
-     Solusi pembangunan dan <br/>pengelolaan bisnis anda <br/>dalam dunia digital.{""}
-     
+   <section className="bg-tulang text-start py-[70%] lg:py-[8%] 2xl:py-[9%] h-screen mx-10">
+    <h1
+     data-aos="fade-right"
+     className="mt-4 text-primary font-semibold 2xl:text-5xl lg:text-4xl text-sm ">
+     Solusi pembangunan dan <br />
+     pengelolaan bisnis anda <br />
+     dalam dunia digital.{""}
     </h1>
-    <Link
-     href="#about">
-     <button data-aos="fade-up" className="transition ease-in-out bg-gradient-to-r from-primary to-secondary border rounded-full shadow-md text-white py-3 px-5 mt-7 hover:scale-110 duration-300">
-      Apa itu Codevora?
-     </button>
+    <Link href="/about">
+     <div
+      data-aos="fade-up"
+      className="hover:cursor-pointer"
+      data-aos-duration="1500"
+      onClick={() => Router.push("/about")}>
+      <button className="hover:cursor-pointer bg-gradient-to-r from-primary to-secondary border rounded-full shadow-md text-white py-3 px-5 mt-7 transition ease-in-out duration-700 hover:scale-110">
+       {" "}
+       Apa itu Codevora?
+      </button>
+     </div>
     </Link>
     <img
      src="/Codevora left.png"
@@ -26,9 +37,10 @@ export default function Home() {
     <img
      src="/Codevora right.png"
      alt="gambar-kiri"
-     className="2xl:w-[32%] lg:w-[65%] w-[100%] 2xl:pt-0 opacity-10 absolute top-0 right-0"
+     className="2xl:w-[61%] lg:w-[65%] w-[100%] opacity-10 absolute 2xl:top-5 lg:top-0 right-0"
     />
    </section>
   </div>
+  
  );
 }
