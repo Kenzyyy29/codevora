@@ -7,9 +7,12 @@ import Footer from "../components/Footer";
 import {MetaData} from "next";
 import Link from "next/link";
 import {usePathname} from "next/navigation";
+import {React, useEffect} from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-const disableNavbar = ["/kemitraan"]
-const disableFooter = ["/kemitraan"]
+const disableNavbar = ["/kemitraan"];
+const disableFooter = ["/kemitraan"];
 
 const DejaVu = localfont({
  src: [
@@ -28,12 +31,20 @@ export const Metadata = {
 };
 
 export default function RootLayout({children}) {
+ {
+  useEffect(() => {
+   AOS.init({
+    duration: 800,
+    once: false,
+   });
+  }, []);
+ }
  const pathname = usePathname();
  return (
   <html
    lang="en"
    className={"${DejaVu.variable}"}>
-   <body className="bg-white">
+   <body className="bg-tulang">
     {!disableNavbar.includes(pathname) && <Navbar />}
     {children}
     {!disableFooter.includes(pathname) && <Footer />}

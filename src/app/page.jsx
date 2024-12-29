@@ -7,19 +7,14 @@ import Link from "next/link";
 export default function Home() {
  return (
   <div>
-   {/* Home Page */}
-   <section className="bg-tulang text-center py-[70%] lg:py-[14%] 2xl:py-[16%] h-screen">
-    <h1 className="xl:text-8xl lg:text-7xl md:text-6xl text-5xl font-extrabold bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent">
-     CODEVORA{""}
+   <section className="bg-tulang text-start py-[70%] lg:py-[8%] 2xl:py-[16%] h-screen mx-10">
+    <h1 data-aos="fade-right" className="mt-4 text-primary font-bold 2xl:text-xl lg:text-4xl text-sm">
+     Solusi pembangunan dan <br/>pengelolaan bisnis anda <br/>dalam dunia digital.{""}
+     
     </h1>
-    <p className="mt-4 text-gray-400 2xl:text-xl lg:text-lg text-sm">
-     Solusi pembangunan dan pengelolaan bisnis dalam dunia digital. Ingin bisnis
-     anda berkembang?
-     <span className="font-bold text-primary">#CodevorainAja</span>{" "}
-    </p>
     <Link
      href="#about">
-     <button className="transition ease-in-out bg-gradient-to-r from-primary to-secondary border rounded-full shadow-md text-white py-3 px-5 mt-7 hover:scale-110 duration-300">
+     <button data-aos="fade-up" className="transition ease-in-out bg-gradient-to-r from-primary to-secondary border rounded-full shadow-md text-white py-3 px-5 mt-7 hover:scale-110 duration-300">
       Apa itu Codevora?
      </button>
     </Link>
@@ -31,15 +26,9 @@ export default function Home() {
     <img
      src="/Codevora right.png"
      alt="gambar-kiri"
-     className="2xl:w-[32%] lg:w-[27%] w-[100%] 2xl:pt-0 lg:pt-0 pt-10 opacity-10 absolute right-0"
+     className="2xl:w-[32%] lg:w-[65%] w-[100%] 2xl:pt-0 opacity-10 absolute top-0 right-0"
     />
    </section>
-
-   {/*Project Page */}
-  
-
-   {/*Careers Page */}
-   
   </div>
  );
 }
