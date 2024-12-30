@@ -6,7 +6,7 @@ export default function About() {
    <h1
     data-aos="fade-up"
     data-aos-duration="1500"
-    className=" text-tulang font-semibold 2xl:text-3xl xl:text=2xl lg:text-4xl text-sm xl:py-40 xl:px-5">
+    className=" text-tulang font-semibold 2xl:text-3xl xl:text=2xl lg:text-4xl text-sm xl:py-40 2xl:py-40 xl:px-5">
     {""}Sekilas Tentang Kami
     <p className="text-sm font-normal text-balance py-6 text-justify pr-96">
      Codevora merupakan start up company yang bergerak di bidang <br />
