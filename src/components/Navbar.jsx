@@ -1,16 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import {usePathname, useRouter,} from "next/navigation";
-
+import {usePathname, useRouter} from "next/navigation";
 
 export default function Navbar() {
  const pathname = usePathname();
  const Router = useRouter();
  return (
-  <nav className="sticky z-10 top-0 bg-gradient-to-r from-secondary to-primary text-white bg-transparent-lg">
-   <ul className="flex items-center 2xl:py-5 lg:py-5 py-6">
-    <ul className="flex justify-start items-center space-x-4 2xl:mr-[31.6%] lg:mr-[22.5%] ml-4 transition ease-in-out duration-700 hover:scale-110">
+  <nav data-aos="fade-down" className="sticky z-10 top-0 bg-gradient-to-r from-secondary to-primary text-white bg-transparent-lg">
+   <ul className="flex items-center 2xl:py-5 lg:py-5 py-6 justify-between">
+    <ul className="flex justify-start items-center space-x-4 ml-4 transition ease-in-out duration-700 hover:scale-110">
      <a href="/">
       <img
        src="../Codevora Logo.png"
@@ -19,14 +18,14 @@ export default function Navbar() {
       />
      </a>
     </ul>
-    <ul className="hidden lg:flex space-x-14 items-center justify-center 2xl:mr-[25.4%] lg:mr-[12.5%] border rounded-full pt-2 pb-2 px-14 bg-tulang">
+    <ul className="hidden lg:flex space-x-9 items-center justify-center">
      <Link href="/about">
       <li
        className={`${
         pathname === "/about"
-         ? "rounded-full text-tulang bg-primary"
-         : "rounded-full text-primary"
-       } hover:text-tulang rounded-full hover:bg-primary px-4 pb-1`}>
+         ? " text-primary bg-tulang"
+         : " text-tulang"
+       } hover:text-primary hover:bg-tulang px-4 pb-1 `}>
        About Us
       </li>
      </Link>
@@ -34,9 +33,9 @@ export default function Navbar() {
       <li
        className={`${
         pathname === "/project"
-         ? "rounded-full text-tulang bg-primary"
-         : "rounded-full text-primary"
-       } hover:text-tulang rounded-full hover:bg-primary px-4 pb-1`}>
+         ? " text-primary bg-tulang"
+         : " text-tulang"
+       } hover:text-primary hover:bg-tulang px-4 pb-1`}>
        Project
       </li>
      </Link>
@@ -44,21 +43,18 @@ export default function Navbar() {
       <li
        className={`${
         pathname === "/careers"
-         ? "rounded-full text-tulang bg-primary"
-         : "rounded-full text-primary"
-       } hover:text-tulang rounded-full hover:bg-primary px-4 pb-1`}>
+         ? "text-primary bg-tulang"
+         : "text-tulang"
+       } hover:text-primary hover:bg-tulang px-4 pb-1`}>
        Careers
       </li>
      </Link>
     </ul>
-    <ul
-     className={`${
-      pathname === "/kemitraan" ? "text-blue-300" : "text-tulang"
-     } flex justify-end px-5 hover:text-blue-300`}>
+    <ul>
      <button
-      className="2xl:flex lg:flex items-center"
+      className="items-center border rounded-lg px-2 py-1 bg-tulang text-primary transition ease-in-out duration-700 hover:scale-110 mx-3"
       onClick={() => Router.push("/kemitraan")}>
-      Ingin menjadi mitra kami?
+      Mitra Kami
      </button>
     </ul>
    </ul>
