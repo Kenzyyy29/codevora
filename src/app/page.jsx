@@ -9,26 +9,14 @@ export default function Home() {
  const Router = useRouter();
  return (
   <div>
-   <section className="bg-tulang text-start py-[70%] lg:py-[8%] 2xl:py-[9%] h-screen mx-10">
+   <section className="bg-tulang text-end py-[70%] lg:py-[8%] 2xl:py-[9%] h-screen mx-10">
     <h1
-     data-aos="fade-right"
-     className="mt-4 text-primary font-semibold 2xl:text-5xl lg:text-4xl text-sm ">
+     data-aos="fade-left"
+     className="mt-4 text-primary font-semibold 2xl:text-5xl lg:text-7xl text-sm py-10 px-5">
      Solusi pembangunan dan <br />
      pengelolaan bisnis anda <br />
-     dalam dunia digital.{""}
+     dalam dunia digital{""}<br/>
     </h1>
-    <Link href="/about">
-     <div
-      data-aos="fade-up"
-      className="hover:cursor-pointer"
-      data-aos-duration="1500"
-      onClick={() => Router.push("/about")}>
-      <button className="hover:cursor-pointer bg-gradient-to-r from-primary to-secondary border rounded-full shadow-md text-white py-3 px-5 mt-7 transition ease-in-out duration-700 hover:scale-110">
-       {" "}
-       Apa itu Codevora?
-      </button>
-     </div>
-    </Link>
     <img
      src="/Codevora left.png"
      alt="gambar-kiri"

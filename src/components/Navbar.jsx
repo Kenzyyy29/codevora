@@ -7,7 +7,9 @@ export default function Navbar() {
  const pathname = usePathname();
  const Router = useRouter();
  return (
-  <nav data-aos="fade-down" className="sticky z-10 top-0 bg-gradient-to-r from-secondary to-primary text-white bg-transparent-lg">
+  <nav
+   data-aos="fade-down"
+   className="sticky z-10 top-0 bg-gradient-to-r from-secondary to-primary text-white bg-transparent-lg">
    <ul className="flex items-center 2xl:py-5 lg:py-5 py-6 justify-between">
     <ul className="flex justify-start items-center space-x-4 ml-4 transition ease-in-out duration-700 hover:scale-110">
      <a href="/">
@@ -23,9 +25,9 @@ export default function Navbar() {
       <li
        className={`${
         pathname === "/about"
-         ? " text-primary bg-tulang"
-         : " text-tulang"
-       } hover:text-primary hover:bg-tulang px-4 pb-1 `}>
+         ? " rounded-full text-primary bg-tulang"
+         : " rounded-full text-tulang"
+       } hover:text-blue-300 transition ease-in-out duration-400 hover:scale-110 px-4 pb-1`}>
        About Us
       </li>
      </Link>
@@ -33,9 +35,9 @@ export default function Navbar() {
       <li
        className={`${
         pathname === "/project"
-         ? " text-primary bg-tulang"
-         : " text-tulang"
-       } hover:text-primary hover:bg-tulang px-4 pb-1`}>
+         ? " rounded-full text-primary bg-tulang"
+         : " rounded-full text-tulang"
+       } hover:text-blue-300 transition ease-in-out duration-400 hover:scale-110 px-4 pb-1`}>
        Project
       </li>
      </Link>
@@ -43,9 +45,9 @@ export default function Navbar() {
       <li
        className={`${
         pathname === "/careers"
-         ? "text-primary bg-tulang"
-         : "text-tulang"
-       } hover:text-primary hover:bg-tulang px-4 pb-1`}>
+         ? " rounded-full text-primary bg-tulang"
+         : "rounded-full text-tulang"
+       } hover:text-blue-300 transition ease-in-out duration-400 hover:scale-110 px-4 pb-1`}>
        Careers
       </li>
      </Link>
