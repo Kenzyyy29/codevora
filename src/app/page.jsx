@@ -37,7 +37,7 @@ export default function Home() {
     <img
      src="/Codevora right.png"
      alt="gambar-kiri"
-     className="2xl:w-[61%] lg:w-[65%] w-[100%] opacity-10 absolute 2xl:top-5 lg:top-0 right-0"
+     className="2xl:w-[61%] xl:w-[60%] lg:w-[65%] w-[100%] opacity-10 absolute 2xl:top-5 xl:top-12 lg:top-0 right-0"
     />
    </section>
   </div>
