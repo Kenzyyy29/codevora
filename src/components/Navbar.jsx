@@ -8,7 +8,6 @@ export default function Navbar() {
  const Router = useRouter();
  return (
   <nav
-   data-aos="fade-down"
    className="sticky z-10 top-0 bg-gradient-to-r from-secondary to-primary text-white bg-transparent-lg">
    <ul className="flex items-center 2xl:py-5 lg:py-5 py-6 justify-between">
     <ul className="flex justify-start items-center space-x-4 ml-4 transition ease-in-out duration-700 hover:scale-110">
