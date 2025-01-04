@@ -40,14 +40,14 @@ export default function Navbar() {
        Project
       </li>
      </Link>
-     <Link href="/careers">
+     <Link href="/career">
       <li
        className={`${
-        pathname === "/careers"
+        pathname === "/career"
          ? " rounded-full text-primary bg-tulang"
          : "rounded-full text-tulang"
        } hover:text-blue-300 transition ease-in-out duration-400 hover:scale-110 px-4 pb-1`}>
-       Careers
+       Code Career
       </li>
      </Link>
     </ul>
