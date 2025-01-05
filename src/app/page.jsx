@@ -11,7 +11,7 @@ export default function Home() {
  return (
   <div>
    <section
-    className="bg-cover text-start py-[70%] xl:py-[8%] 2xl:py-[9%] h-screen"
+    className=" 2xl:bg-cover text-start py-[70%] xl:py-[8%] 2xl:py-[9%] h-screen"
     style={{backgroundImage: "url('/bg1.jpg')"}}>
     <h1
      data-aos="fade-right"
@@ -119,6 +119,7 @@ export default function Home() {
      </div>
     </div>
    </section>
+
   </div>
  );
 }

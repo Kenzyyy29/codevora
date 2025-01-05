@@ -121,7 +121,7 @@ export default function Footer() {
        <li className="mb-3 hover:text-blue-300">Project</li>
       </Link>
       <Link href="/">
-       <li className="mb-3 hover:text-blue-300">Customer Service</li>
+       <li className="mb-3 hover:text-blue-300">Hubungi Kami</li>
       </Link>
      </ul>
     </li>
