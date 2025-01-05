@@ -10,7 +10,6 @@ export default function Home() {
  const Router = useRouter();
  return (
   <div>
-
    <section
     className="bg-cover text-start py-[70%] xl:py-[8%] 2xl:py-[9%] h-screen"
     style={{backgroundImage: "url('/bg1.jpg')"}}>
@@ -29,13 +28,14 @@ export default function Home() {
      KEBUTUHAN BISNIS ANDA
     </p>
    </section>
+
    {/* Alur Kemitraan */}
    <section className="overflow-hidden bg-primary py-[70%] xl:py-[2%] 2xl:py-[2%] h-80">
     <h1 className="text-center text-tulang lg:font-bold xl:text-xl ">
      ALUR SINGKAT KEMITRAAN
     </h1>
     <div className="flex justify-center xl:py-14 xl:text-xl">
-     <p className="mx-10 font-medium border rounded-lg bg-tulang text-primary text-center xl:py-3 xl:px-7 ">
+     <p className="mx-10 font-medium border rounded-lg bg-tulang text-primary text-center xl:py-3 xl:px-7 hover:bg-primary hover:text-tulang cursor-pointer">
       Diskusi Konsep
      </p>
      <svg
@@ -51,7 +51,7 @@ export default function Home() {
        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
       />
      </svg>
-     <p className="mx-10 font-medium border rounded-lg bg-tulang text-primary text-center xl:py-3 xl:px-12">
+     <p className="mx-10 font-medium border rounded-lg bg-tulang text-primary text-center xl:py-3 xl:px-12 hover:bg-primary hover:text-tulang cursor-pointer">
       Presentasi
      </p>
      <svg
@@ -67,7 +67,7 @@ export default function Home() {
        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
       />
      </svg>
-     <p className="mx-10 font-medium border rounded-lg bg-tulang text-primary text-center xl:py-3 xl:px-12">
+     <p className="mx-10 font-medium border rounded-lg bg-tulang text-primary text-center xl:py-3 xl:px-12 hover:bg-primary hover:text-tulang cursor-pointer">
       Pengerjaan
      </p>
      <svg
@@ -83,12 +83,13 @@ export default function Home() {
        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
       />
      </svg>
-     <p className="mx-10 font-medium border rounded-lg bg-tulang text-primary text-center py-3 px-8">
+     <p className="mx-10 font-medium border rounded-lg bg-tulang text-primary text-center py-3 px-8 hover:bg-primary hover:text-tulang cursor-pointer">
       Project Done!
      </p>
     </div>
-    <h1 className="text-center text-tulang lg:text-lg transition ease-in-out hover:scale-110 duration-400 cursor-pointer mx-auto justify-center py-2 w-72 hover:text-blue-300"
-    onClick ={() => Router.push("/kemitraan")}  >
+    <h1
+     className="text-center text-tulang lg:text-lg transition ease-in-out hover:scale-110 duration-400 cursor-pointer mx-auto justify-center py-2 w-72 hover:text-blue-300"
+     onClick={() => Router.push("/kemitraan")}>
      Lihat Selengkapnya
     </h1>
    </section>
@@ -101,7 +102,7 @@ export default function Home() {
     </h1>
     <div
      data-aos="fade-up"
-     className="max-w-sm rounded-3xl overflow-hidden shadow-md mt-16 mx-auto ">
+     className="max-w-sm rounded-3xl overflow-hidden shadow-md mt-16 mx-auto">
      <div className="h-64 bg-primary rounded-t-3xl justify-center">
       <img
        className="w-72 py-16 mx-auto"
@@ -109,10 +110,10 @@ export default function Home() {
        alt="Sunset in the mountains"
       />
      </div>
-     <div className="px-10 py-5 bg-secondary">
-      <div className="font-bold text-xl mb-2 text-tulang    ">Cekatan</div>
+     <div className="px-10 py-5 bg-secondary ">
+      <div className="font-bold text-xl mb-2 text-tulang">CEKATAN</div>
       <p className="text-tulang text-base">
-       Cekatan adalah project yang fokus di bidang Point of Sale atau POS.
+       CEKATAN adalah project yang fokus di bidang Point of Sale atau POS.
        Project ini merupakan Project pertama dari perusahaan Codevora.
       </p>
      </div>

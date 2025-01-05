@@ -30,14 +30,14 @@ export default function Navbar() {
        About Us
       </li>
      </Link>
-     <Link href="/project">
+     <Link href="/product">
       <li
        className={`${
-        pathname === "/project"
+        pathname === "/product"
          ? " rounded-full text-primary bg-tulang"
          : " rounded-full text-tulang"
        } hover:text-blue-300 transition ease-in-out duration-400 hover:scale-110 px-4 pb-1`}>
-       Project
+       Product
       </li>
      </Link>
      <Link href="/career">
@@ -47,7 +47,7 @@ export default function Navbar() {
          ? " rounded-full text-primary bg-tulang"
          : "rounded-full text-tulang"
        } hover:text-blue-300 transition ease-in-out duration-400 hover:scale-110 px-4 pb-1`}>
-       Code Career
+       Career
       </li>
      </Link>
     </ul>

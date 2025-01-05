@@ -1,6 +1,7 @@
 "use client"
 
 import {useRouter} from "next/navigation";
+import Link from "next/link";
 
 export default function About() {
  const Router = useRouter();
@@ -23,14 +24,19 @@ export default function About() {
       <br />
       bisnis baik itu di level mikro maupun makro.
      </p>
-     <button className="border-tulang bg-tulang border-2 rounded-full text-primary py-3 items-center px-10 text-2xl font-semibold transition-all ease-in duration-500 hover:scale-110 hover:bg-primary hover:text-tulang">
-      SELENGKAPNYA
-     </button>
+     <Link href="#tujuan">
+      <button className="border-tulang bg-tulang border-2 rounded-full text-primary py-3 items-center px-10 text-2xl font-semibold transition-all ease-in duration-500 hover:scale-110 hover:bg-primary hover:text-tulang">
+       SELENGKAPNYA
+      </button>
+     </Link>
     </h1>
    </section>
 
-   {/* Alur Kemitraan */}
-   <section className="bg-tulang py-[70%] lg:py-[2%] 2xl:py-[3%] h-auto mx-10">
+   {/* Jajaran Pengembang */}
+   <section 
+   id="team"
+   data-aos="fade-in"
+   className="bg-tulang py-[70%] lg:py-[2%] 2xl:py-[3%] h-auto mx-10">
     <h1 className="text-primary text-center font-bold 2xl:text-4xl xl:text-2xl">
      {" "}
      JAJARAN PENGEMBANG
@@ -108,7 +114,7 @@ export default function About() {
 
    {/* Tujuan */}
    <section
-    id="about"
+    id="tujuan"
     className="bg-cover h-screen"
     style={{backgroundImage: "url('/bg2.jpg')"}}>
     <h1 className=" text-tulang text-center font-semibold 2xl:text-4xl xl:text=2xl lg:text-4xl text-sm 2xl:py-20 xl:px-5 ">
