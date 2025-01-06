@@ -56,7 +56,7 @@ const products = [
  },
 ];
 const callsToAction = [
- {name: "Layanan Pengaduan", href: "#", icon: PlayCircleIcon},
+ {name: "Layanan Pengaduan", href: "/form", icon: PlayCircleIcon},
  {name: "Hubungi Kami", href: "#", icon: PhoneIcon},
 ];
 
