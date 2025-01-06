@@ -1,3 +1,4 @@
+
 export default function Careers() {
  return (
   <div
@@ -23,6 +24,7 @@ export default function Careers() {
      <input
       className="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-secondary rounded-md pl-10 pr-3 py-2 transition duration-300 ease focus:outline-none focus:border-secondary hover:border-secondary shadow-sm focus:shadow"
       placeholder="Cari jenis pekerjaanmu disini"
+      type="text"
      />
     </div>
    </div>

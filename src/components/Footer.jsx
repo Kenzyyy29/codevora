@@ -30,7 +30,7 @@ export default function FooterWithSocialLinks() {
       </h1>
       <p>
        Jl. Arthamulya 1, No. 29, Kec. Cibereum,
-       <br /> Kel. Kotabaru, Kota Tasikmalaya
+       <br /> Kel. Kotabaru, Kota Tasikmalaya, 46196.
       </p>
      </li>
 
@@ -90,16 +90,16 @@ export default function FooterWithSocialLinks() {
        LAYANAN
       </h1>
       <ul className="my-2 2xl:text-xl font-thin">
-       <Link href="/layanan">
+       <Link href="/layanan#">
         <li className="mb-3 hover:text-blue-300">Pembuatan Website</li>
        </Link>
        <Link href="/layanan">
         <li className="mb-3 hover:text-blue-300">Pembuatan Mobile App</li>
        </Link>
-       <Link href="/layanan">
+       <Link href="/layanan#layanan-lain">
         <li className="mb-3 hover:text-blue-300">Desain UI/UX</li>
        </Link>
-       <Link href="/layanan">
+       <Link href="/layanan#layanan-lain">
         <li className="mb-3 hover:text-blue-300">Konsultasi</li>
        </Link>
        <Link href="/kemitraan">

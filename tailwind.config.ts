@@ -12,13 +12,13 @@ export default {
     primary: "#354da1",
     secondary: "#59668a",
     tulang: "#f4f4f4",
-    hitam: "#1e1e1e"
+    hitam: "#1e1e1e",
    },
    fontFamily: {
     DejaVu: ["var(--font-dejavu)"],
    },
   },
  },
- plugins: [],
+ plugins: [require("daisyui")],
 } satisfies Config;
 

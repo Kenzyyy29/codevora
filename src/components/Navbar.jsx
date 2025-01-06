@@ -45,13 +45,13 @@ const products = [
  {
   name: "Desain UI/UX",
   description: "Your customers’ data will be safe and secure",
-  href: "layanan",
+  href: "layanan#layanan-lain",
   icon: FingerPrintIcon,
  },
  {
   name: "Konsultasi",
   description: "Connect with third-party tools",
-  href: "layanan",
+  href: "layanan#layanan-lain",
   icon: SquaresPlusIcon,
  },
 ];
