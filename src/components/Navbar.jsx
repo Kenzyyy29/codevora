@@ -33,25 +33,25 @@ const products = [
  {
   name: "Pembuatan Website",
   description: "Get a better understanding of your traffic",
-  href: "#",
+  href: "/layanan",
   icon: ChartPieIcon,
  },
  {
   name: "Pembuatan Mobile App",
   description: "Speak directly to your customers",
-  href: "#",
+  href: "/layanan",
   icon: CursorArrowRaysIcon,
  },
  {
   name: "Desain UI/UX",
   description: "Your customers’ data will be safe and secure",
-  href: "#",
+  href: "layanan",
   icon: FingerPrintIcon,
  },
  {
   name: "Konsultasi",
   description: "Connect with third-party tools",
-  href: "#",
+  href: "layanan",
   icon: SquaresPlusIcon,
  },
 ];

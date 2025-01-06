@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Careers() {
  return (
-  <div className="bg-tulang text-center justify-center lg:py-[20%] 2xl:py-[20%] py-[70%] h-screen">
-   <h1 className="xl:text-5xl lg:text-7xl md:text-6xl text-5xl font-extrabold text-primary">
+  <div className="bg-tulang text-center justify-center lg:py-[20%] 2xl:py-[20%] py-[80%] h-screen">
+   <h1 className="xl:text-5xl lg:text-7xl md:text-6xl text-2xl font-extrabold text-primary">
     HALAMAN INI SEDANG DALAM TAHAP PENGEMBANGAN
    </h1>
    <Link href="/">

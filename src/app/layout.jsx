@@ -45,7 +45,7 @@ export default function RootLayout({children}) {
  return (
   <html
    lang="en"
-   className={"${DejaVu.variable} !scroll-smooth scroll-mb-0"}>
+   className={"${DejaVu.variable} !scroll-smooth "}>
    <body className="bg-tulang">
     {!disableNavbar.includes(pathname) && <Navbar />}
     {children}

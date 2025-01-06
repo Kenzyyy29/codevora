@@ -90,17 +90,17 @@ export default function FooterWithSocialLinks() {
        LAYANAN
       </h1>
       <ul className="my-2 2xl:text-xl font-thin">
-       <Link href="/">
+       <Link href="/layanan">
         <li className="mb-3 hover:text-blue-300">Pembuatan Website</li>
        </Link>
-       <Link href="/">
+       <Link href="/layanan">
         <li className="mb-3 hover:text-blue-300">Pembuatan Mobile App</li>
        </Link>
-       <Link href="/">
-        <li className="mb-3 hover:text-blue-300">Website Maintenance</li>
+       <Link href="/layanan">
+        <li className="mb-3 hover:text-blue-300">Desain UI/UX</li>
        </Link>
-       <Link href="/">
-        <li className="mb-3 hover:text-blue-300">Mobile App Maintenance</li>
+       <Link href="/layanan">
+        <li className="mb-3 hover:text-blue-300">Konsultasi</li>
        </Link>
        <Link href="/kemitraan">
         <li className="mb-3 hover:text-blue-300">Program Kemitraan</li>
@@ -115,11 +115,11 @@ export default function FooterWithSocialLinks() {
        <Link href="/about">
         <li className="mb-3 hover:text-blue-300">Tentang Kami</li>
        </Link>
-       <Link href="/career">
-        <li className="mb-3 hover:text-blue-300">Karir</li>
-       </Link>
        <Link href="/product">
         <li className="mb-3 hover:text-blue-300">Produk</li>
+       </Link>
+       <Link href="/career">
+        <li className="mb-3 hover:text-blue-300">Karir</li>
        </Link>
        <Link href="/">
         <li className="mb-3 hover:text-blue-300">Hubungi Kami</li>
