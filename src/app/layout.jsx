@@ -12,8 +12,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 
-const disableNavbar = ["/kemitraan"];
-const disableFooter = ["/kemitraan"];
+const disableNavbar = ["/kemitraan", "/form"];
+const disableFooter = ["/kemitraan", "/form"];
 
 const DejaVu = localfont({
  src: [

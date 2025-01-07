@@ -3,8 +3,8 @@ import {ChevronDownIcon} from "@heroicons/react/16/solid";
 
 export default function Form() {
  return (
-  <section className="h-auto bg-tulang">
-   <form className="w-screen max-w-lg border border-secondary rounded-3xl my-[15%] ml-40 py-5 px-5 font-">
+  <section className="h-screen bg-primary lg:py-[20%] 2xl:py-[10%] py-[80%]">
+   <form className="w-screen max-w-lg border border-secondary rounded-3xl ml-40 py-5 px-5 bg-tulang">
     <div className="flex flex-wrap -mx-3 mb-6">
      <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
       <label
@@ -101,6 +101,9 @@ export default function Form() {
        type="text"
        placeholder="90210"
       />
+      <button className="border rounded-full bg-primary text-tulang py-2 px-6 font-semibold mt-10 transition-all ease-in-out duration-500 hover:bg-tulang hover:text-primary hover:border-primary">
+       SUBMIT
+      </button>
      </div>
     </div>
    </form>
