@@ -1,18 +1,9 @@
-"use client";
 
-import {Pagination} from "swiper/modules";
-import {EffectCreative} from "swiper/modules";
-import "swiper/css/pagination";
-import {Swiper, SwiperSlide} from "swiper/react";
-import "swiper/css";
 import Link from "next/link";
-import {useRouter} from "next/navigation";
-import React, {useRef, useState} from "react";
-import "swiper/css/effect-creative";
+import LayananMobile from "../../components/LayananMobile";
 
 
 export default function Layanan() {
- const Router = useRouter();
  return (
   <div>
    <section className="h-screen bg-tulang py-32 xl:py-40 2xl:py-56 ml-3 xl:ml-10">
@@ -38,22 +29,22 @@ export default function Layanan() {
    <section
     id="layanan"
     className="hidden md:flex lg:flex xl:flex 2xl:flex overflow-hidden cursor-pointer 2xl:h-auto">
-    <a
+    <Link
      href="/"
      className="bg-scroll w-full max-w-[50%] xl:h-96 2xl:h-full text-tulang hover:scale-110 duration-700 grayscale hover:grayscale-0"
      style={{backgroundImage: "url('/website.jpg')"}}>
      <h1 className="text-center my-[25%] font-bold text-3xl">
       PEMBUATAN WEBSITE
      </h1>
-    </a>
-    <a
+    </Link>
+    <Link
      href="/"
      className="bg-scroll w-full max-w-[50%] xl:h-96 2xl:h-full text-tulang hover:scale-110 duration-700 grayscale hover:grayscale-0"
      style={{backgroundImage: "url('/app.jpg')"}}>
      <h1 className="text-center my-[25%] font-bold text-3xl">
       PEMBUATAN MOBILE APP
      </h1>
-    </a>
+    </Link>
    </section>
 
    {/*Jenis Layanan Mobile*/}
@@ -125,129 +116,7 @@ export default function Layanan() {
      </div>
     </div>
    </section>
-
-   {/*Mobile Layanan Lain */}
-   <section className="h-auto bg-primary block md:hidden lg:hidden xl:hidden 2xl:hidden text-center pb-10">
-    <h1 className="text-center text-tulang font-bold text-2xl py-10 ml-3 xl:ml-10">
-     LAYANAN LAIN
-    </h1>
-    <Swiper
-     pagination={true}
-     grabCursor={true}
-     effect={"creative"}
-     creativeEffect={{
-      prev: {
-       shadow: true,
-       translate: [0, 0, -400],
-      },
-      next: {
-       translate: ["100%", 0, 0],
-      },
-     }}
-     modules={[Pagination]}
-     className="mySwiper">
-     <SwiperSlide>
-      <div
-       id="layanan-lain"
-       className="bg-tulang text-primary h-96 mx-5 rounded-3xl text-2xl font-bold py-5">
-       DESAIN UI/UX
-       <p className="font-normal text-lg py-5 text-justify text-balance px-5">
-        Pengen bikin website buat usaha, tapi bingung harus mulai dari mana?
-        Tenang, di <span className="font-bold">CODEVORA</span> kalian bisa
-        menggunakan jasa kami untuk mendesain UI/UX impian kalian loh, kalian
-        juga bisa request desain yang kalian inginkan yang tentunya dengan harga
-        yang sangat terjangkau.
-       </p>
-       <button className="border rounded-full bg-primary text-tulang py-2 px-6 font-normal text-lg mt-3 transition-all ease-in-out duration-500 hover:bg-tulang hover:text-primary hover:border-primary">
-        Pesan UI/UX Sekarang
-       </button>
-      </div>
-     </SwiperSlide>
-     <SwiperSlide>
-      <div className="bg-tulang text-primary h-96 mx-5 rounded-3xl text-2xl font-bold py-5">
-       KONSULTASI
-       <p className="font-normal text-lg py-5 text-justify text-balance px-5">
-        Kalian masih bingung waktu udah punya usaha tapi gatau apa yang harus
-        dilakuin biar iklan digital kalian naik? Tenang, di{" "}
-        <span className="font-bold">CODEVORA</span> Kalian bisa konsultasi
-        terkait iklan digital kalian loh! Kita bakal bantu iklan digital usaha
-        kalian supaya orang orang bisa ngejangkau akun kalian.
-       </p>
-       <button className="border rounded-full bg-primary text-tulang py-2 px-6 font-normal text-lg mt-3 transition-all ease-in-out duration-500 hover:bg-tulang hover:text-primary hover:border-primary">
-        Konsultasi Sekarang
-       </button>
-      </div>
-     </SwiperSlide>
-    </Swiper>
-   </section>
+   <LayananMobile />
   </div>
  );
 }
-
-{
- /*<section className="h-auto bg-black">
-    <div className="text-tulang font-bold text-xl text-center xl:flex cursor-pointer">
-     <div className="xl:flex w-screen opacity-[30%]">
-      <div className="max-w-[50%] overflow-hidden shadow-md">
-       <img
-        onClick={() => Router.push("/")}
-        className="w-full hover:scale-110 transition-all"
-        src="/website.jpg"
-        alt="website"
-       />
-      </div>
-      <div className="max-w-[50%] overflow-hidden shadow-md">
-       <img
-        onClick={() => Router.push("/")}
-        className="w-full hover:scale-110 transition-all"
-        src="/app.jpg"
-        alt="app"
-       />
-      </div>
-     </div>
-    </div>
-   </section>*/
-}
-
-{
- /*<section>
-    <div className="w-full xl:flex h-96 overflow-hidden">
-     <a href="/"
-      className="text-tulang justify-center bg-cover w-full transition-all ease-in-out duration-700 hover:scale-110 brightness-50 hover:brightness-100"
-      style={{backgroundImage: "url('/website.jpg')"}}>
-      <h1 className="text-center py-[25%] font-bold text-2xl">
-       PEMBUATAN WEBSITE
-      </h1>
-     </a>
-     <a href="/"
-      className="text-tulang justify-center bg-cover w-full transition-all ease-in-out duration-700 hover:scale-110 brightness-50 hover:brightness-100"
-      style={{backgroundImage: "url('/app.jpg')"}}>
-      <h1 className="text-center py-[25%] font-bold text-2xl">
-       PEMBUATAN MOBILE APP
-      </h1>
-     </a>
-    </div>
-   </section>*/
-}
-
-{/*<section
-    id="layanan"
-    data-aos="fade-in"
-    className="hidden xl:flex 2xl:flex overflow-hidden cursor-pointer 2xl:h-auto">
-    <a
-     href="/"
-     className="bg-scroll w-full max-w-[50%] xl:h-96 2xl:h-full text-tulang hover:scale-110 duration-700 grayscale hover:grayscale-0"
-     style={{backgroundImage: "url('/website.jpg')"}}>
-     <h1 className="text-center my-[25%] font-bold text-3xl">
-      PEMBUATAN WEBSITE
-     </h1>
-    </a>
-    <a
-     href="/"
-     className="bg-scroll w-full max-w-[50%] xl:h-96 2xl:h-full text-tulang hover:scale-110 duration-700 grayscale hover:grayscale-0"
-     style={{backgroundImage: "url('/app.jpg')"}}>
-     <h1 className="text-center my-[25%] font-bold text-3xl">
-      PEMBUATAN MOBILE APP
-     </h1>
-    </a>
-   </section>*/}

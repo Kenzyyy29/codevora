@@ -1,6 +1,7 @@
 "use client";
 
 import {usePathname, useRouter} from "next/navigation";
+import Link from "next/link";
 
 import {useState} from "react";
 import {
@@ -70,7 +71,7 @@ export default function Example() {
     aria-label="Global"
     className="mx-auto flex items-center justify-between p-6 2xl:px-8">
     <div className="flex lg:flex-1">
-     <a
+     <Link
       href="/"
       className="-m-1.5 p-1.5">
       <span className="sr-only">Codevora Tech</span>
@@ -79,7 +80,7 @@ export default function Example() {
        src="/Codevora Logo.png"
        className="h-8 w-auto transition ease-in-out duration-700 hover:scale-110"
       />
-     </a>
+     </Link>
     </div>
     <div className="flex lg:hidden">
      <button
@@ -118,12 +119,12 @@ export default function Example() {
            />
           </div>
           <div className="flex-auto">
-           <a
+           <Link
             href={item.href}
             className="block font-semibold text-gray-900">
             {item.name}
             <span className="absolute inset-0" />
-           </a>
+           </Link>
            <p className="mt-1 text-gray-600">{item.description}</p>
           </div>
          </div>
@@ -131,7 +132,7 @@ export default function Example() {
        </div>
        <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
         {callsToAction.map((item) => (
-         <a
+         <Link
           key={item.name}
           href={item.href}
           className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100">
@@ -140,13 +141,13 @@ export default function Example() {
            className="size-5 flex-none text-gray-400"
           />
           {item.name}
-         </a>
+         </Link>
         ))}
        </div>
       </PopoverPanel>
      </Popover>
 
-     <a
+     <Link
       href="/about"
       className={`${
        pathname === "/about"
@@ -154,8 +155,8 @@ export default function Example() {
         : " rounded-full text-tulang"
       } hover:text-blue-300  px-4  text-md font-semibold`}>
       Tentang Kami
-     </a>
-     <a
+     </Link>
+     <Link
       href="/product"
       className={`${
        pathname === "/product"
@@ -163,8 +164,8 @@ export default function Example() {
         : " rounded-full text-tulang"
       } hover:text-blue-300  px-4  text-md font-semibold`}>
       Produk
-     </a>
-     <a
+     </Link>
+     <Link
       href="/career"
       className={`${
        pathname === "/career"
@@ -172,14 +173,14 @@ export default function Example() {
         : " rounded-full text-tulang"
       } hover:text-blue-300  px-4  text-md font-semibold`}>
       Karir
-     </a>
+     </Link>
     </PopoverGroup>
     <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-     <a
+     <Link
       href="/kemitraan"
       className="text-md font-semibold text-primary border rounded-full bg-tulang py-2 px-3 transition-all hover:bg-primary hover:text-tulang hover:scale-110">
       Menjadi Mitra Kami
-     </a>
+     </Link>
     </div>
    </nav>
 
@@ -191,7 +192,7 @@ export default function Example() {
     <div className="fixed inset-0 z-10" />
     <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
      <div className="flex items-center justify-between">
-      <a
+      <Link
        href="/"
        className="-m-1.5 p-1.5">
        <span className="sr-only">Codevora Tech</span>
@@ -200,7 +201,7 @@ export default function Example() {
         src="Codevora Logo Blue.png"
         className="h-8 w-auto"
        />
-      </a>
+      </Link>
       <button
        type="button"
        onClick={() => setMobileMenuOpen(false)}
@@ -237,28 +238,28 @@ export default function Example() {
           ))}
          </DisclosurePanel>
         </Disclosure>
-        <a
+        <Link
          href="/about"
          className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-primary hover:bg-gray-50">
          Tentang Kami
-        </a>
-        <a
+        </Link>
+        <Link
          href="/product"
          className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-primary hover:bg-gray-50">
          Produk
-        </a>
-        <a
+        </Link>
+        <Link
          href="/career"
          className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-primary hover:bg-gray-50">
          Karir
-        </a>
+        </Link>
        </div>
        <div className="py-6">
-        <a
+        <Link
          href="/kemitraan"
          className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-primary hover:bg-gray-50">
          Menjadi Mitra Kami
-        </a>
+        </Link>
        </div>
       </div>
      </div>

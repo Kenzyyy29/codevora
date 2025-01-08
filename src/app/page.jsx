@@ -1,13 +1,9 @@
-"use client";
 
 import Image from "next/image";
 import "./globals.css";
 import Link from "next/link";
-import {usePathname, useRouter} from "next/navigation";
 
 export default function Home() {
- const pathname = usePathname();
- const Router = useRouter();
  return (
   <div>
    <section
@@ -88,11 +84,11 @@ export default function Home() {
       Project Done!
      </p>
     </div>
-    <h1
-     className="text-center text-tulang lg:text-lg transition ease-in-out hover:scale-110 duration-400 cursor-pointer mx-auto justify-center py-2 w-72 hover:text-blue-300"
-     onClick={() => Router.push("/kemitraan")}>
-     Lihat Selengkapnya
-    </h1>
+    <Link href="/kemitraan">
+     <h1 className="text-center text-tulang lg:text-lg transition ease-in-out hover:scale-110 duration-400 cursor-pointer mx-auto justify-center py-2 w-72 hover:text-blue-300">
+      Lihat Selengkapnya
+     </h1>
+    </Link>
    </section>
 
    {/* Alur Kemitraan */}
@@ -153,11 +149,12 @@ export default function Home() {
       Project Done!
      </p>
     </div>
-    <h1
-     className="text-center text-tulang lg:text-lg transition ease-in-out hover:scale-110 duration-400 cursor-pointer mx-auto justify-center py-2 w-72 hover:text-blue-300"
-     onClick={() => Router.push("/kemitraan")}>
-     Lihat Selengkapnya
-    </h1>
+    <Link href="/kemitraan">
+     <h1
+      className="text-center text-tulang lg:text-lg transition ease-in-out hover:scale-110 duration-400 cursor-pointer mx-auto justify-center py-2 w-72 hover:text-blue-300">
+      Lihat Selengkapnya
+     </h1>
+    </Link>
    </section>
 
    {/* Project yang sedang berjalan */}
@@ -173,7 +170,7 @@ export default function Home() {
       <img
        className="w-72 py-16 mx-auto"
        src="/Logo Project Cekatan Putih.png"
-       alt="Sunset in the mountains"
+       alt="Cekatan"
       />
      </div>
      <div className="px-10 py-5 bg-secondary ">

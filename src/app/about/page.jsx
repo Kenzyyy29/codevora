@@ -1,10 +1,6 @@
-"use client"
-
-import {useRouter} from "next/navigation";
 import Link from "next/link";
 
 export default function About() {
- const Router = useRouter();
  return (
   <div>
    {/* Tentang Kami */}
@@ -37,11 +33,14 @@ export default function About() {
     id="tujuan"
     className="bg-cover h-auto xl:h-screen 2xl:h-screen"
     style={{backgroundImage: "url('/bg2.jpg')"}}>
-    <h1 data-aos="fade-in"
-    className=" text-tulang text-center font-semibold text 2xl:text-4xl xl:text=2xl lg:text-4xl text-xl 2xl:py-20 xl:px-5 ">
+    <h1
+     data-aos="fade-in"
+     className=" text-tulang text-center font-semibold text 2xl:text-4xl xl:text=2xl lg:text-4xl text-xl 2xl:py-20 xl:px-5 ">
      {""}TUJUAN KAMI
     </h1>
-    <p data-aos="fade-in" className="xl:text-2xl text-xl font-normal text-balance py-6 xl:text-justify ml-4 xl:ml-24 text-tulang">
+    <p
+     data-aos="fade-in"
+     className="xl:text-2xl text-xl font-normal text-balance py-6 xl:text-justify ml-4 xl:ml-24 text-tulang">
      Tujuan utama kami adalah membuat dan mengembangkan inovasi-inovasi <br />
      baru dalam dunia digital. Seiring dengan berkembangnya teknologi, jelas{" "}
      <br />
@@ -55,20 +54,15 @@ export default function About() {
      mewadahi bakat mereka yang mungkin akan membawa perubahan ke arah <br />
      Indonesia yang lebih baik.
     </p>
-    <button
-    data-aos="fade-in"
-     className="border-tulang border-2 rounded-full text-tulang py-3 items-start px-2 xl:px-10 2xl:px-10 xl:text-2xl 2xl:text-2xl font-semibold transition ease-in-out duration-700 hover:scale-110 ml-3 xl:ml-24 my-10"
-     onClick={() => Router.push("/career")}>
-     BERGABUNG BERSAMA KAMI
-    </button>
+    <Link href="/kemitraan">
+     <button
+      data-aos="fade-in"
+      className="border-tulang border-2 rounded-full text-tulang py-3 items-start px-2 xl:px-10 2xl:px-10 xl:text-2xl 2xl:text-2xl font-semibold transition ease-in-out duration-700 hover:scale-110 ml-3 xl:ml-24 my-10"
+      >
+      BERGABUNG BERSAMA KAMI
+     </button>
+    </Link>
    </section>
   </div>
  );
-}
-
-{
- /* Codevora merupakan start up company yang bergerak di bidang teknologi
-     digital. Tujuan dari perusahaan ini adalah untuk membuat serta
-     mengembangkan inovasi baru dalam dunia digital demi mempermudah jalannya
-     bisnis baik itu di level mikro maupun makro. */
 }
