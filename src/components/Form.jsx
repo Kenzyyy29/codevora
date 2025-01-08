@@ -1,60 +1,13 @@
 
-import nodemailer from "nodemailer";
 import {useState} from "react";
 
-const Form = () => {
- const [inputs, setInputs] = useState({
-  name: "",
-  email: "",
-  tel: "",
-  subject: "",
-  message: "",
-  checkbox: "",
- });
-
- const handleChange = (event) => {
-  const id = event.target.id;
-  const value = event.target.value;
-  setInputs((values) => ({...values, [id]: value}));
- };
-
- const handleSubmit = async (event) => {
-  event.preventDefault();
-  if (
-   inputs.name &&
-   inputs.email &&
-   inputs.tel &&
-   inputs.subject &&
-   inputs.message &&
-   inputs.checkbox
-  ) {
-   try {
-    const res = await fetch(`api/form`, {
-     method: "POST",
-     headers: {
-      "Content-Type": "application/json",
-     },
-     body: JSON.stringify(inputs),
-    });
-    setInputs({
-     name: "",
-     email: "",
-     tel: "",
-     subject: "",
-     message: "",
-     checkbox: "",
-    })
-   } catch (error) {
-    console.log(error);
-   }
-  }
- };
+export default function Form() {
+    
 
  return (
   <div className="  max-w-[35%] py-4 space-y-5 rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5">
    <form
-    className="max-w-lg mx-auto"
-    onSubmit={(e) => handleSubmit(e)}>
+    className="max-w-lg mx-auto">
     <label
      htmlFor="name"
      className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
@@ -66,8 +19,6 @@ const Form = () => {
      aria-describedby="helper-text-explanation"
      className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
      placeholder="Nama"
-     onChange={handleChange}
-     value={inputs.text}
     />
 
     <label
@@ -81,8 +32,6 @@ const Form = () => {
      aria-describedby="helper-text-explanation"
      className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
      placeholder="Email"
-     onChange={handleChange}
-     value={inputs.email}
     />
 
     <label
@@ -96,8 +45,6 @@ const Form = () => {
      aria-describedby="helper-text-explanation"
      className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
      placeholder="No. Handphone"
-     onChange={handleChange}
-     value={inputs.tel}
     />
 
     <label
@@ -111,8 +58,6 @@ const Form = () => {
      aria-describedby="helper-text-explanation"
      className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
      placeholder="Subjek"
-     onChange={handleChange}
-     value={inputs.subject}
     />
 
     <label
@@ -124,22 +69,18 @@ const Form = () => {
      id="message"
      rows="4"
      className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-     placeholder="Pesan Anda"
-     onChange={handleChange}
-     value={inputs.message}></textarea>
+     placeholder="Pesan Anda"></textarea>
 
     <legend className="sr-only">Checkbox variants</legend>
     <div className="flex items-center mt-2">
      <input
       id="checkbox"
       type="checkbox"
-      value={inputs.checkbox}
       className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
      />
      <label
       htmlFor="checkbox"
-      className="ms-2 text-sm font-normal text-gray-900 dark:text-gray-300 text-justify"
-      onChange={handleChange}>
+      className="ms-2 text-sm font-normal text-gray-900 dark:text-gray-300 text-justify">
       Saya menyetujui untuk mengungkapkan informasi pribadi saya kepada Codevora
       Tech untuk mengidentifikasi pesan yang saya sampaikan agar pesan saya bisa
       ditindaklanjuti.
@@ -151,6 +92,4 @@ const Form = () => {
    </form>
   </div>
  );
-};
-
-export default Form;
+}
