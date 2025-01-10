@@ -1,6 +1,7 @@
 "use client";
 
 import "./globals.css";
+import Head from "next/head";
 import {MetaData} from "next";
 import localfont from "next/font/local";
 import Navbar from "../components/Navbar";
@@ -47,12 +48,21 @@ export default function RootLayout({children}) {
    lang="en"
    className={"${DejaVu.variable} !scroll-smooth "}>
    <head>
+    <title>Codevora</title>
+    <meta
+     name="description"
+     content="Selamat datang di halaman utama Codevora."
+    />
+    <meta
+     name="viewport"
+     content="width=device-width, initial-scale=1"
+    />
+   </head>
    <body className="bg-tulang">
     {!disableNavbar.includes(pathname) && <Navbar />}
     {children}
     {!disableFooter.includes(pathname) && <Footer />}
    </body>
-   </head>
   </html>
  );
 }
