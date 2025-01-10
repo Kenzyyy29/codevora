@@ -14,55 +14,59 @@ const Form = async() => {
       <form className="max-w-lg mx-auto">
        <label
         htmlFor="name"
-        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+        className="block mb-2 text-sm font-medium text-tulang">
         Nama
        </label>
        <input
         type="name"
         id="name"
         aria-describedby="helper-text-explanation"
-        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-tulang dark:focus:ring-blue-500 dark:focus:border-blue-500"
         placeholder="Nama"
        />{" "}
+       <br />
        <label
         htmlFor="email"
-        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+        className="block mb-2 text-sm font-medium text-tulang">
         Email
        </label>
        <input
         type="email"
         id="email"
         aria-describedby="helper-text-explanation"
-        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-tulang dark:focus:ring-blue-500 dark:focus:border-blue-500"
         placeholder="Email"
        />
+       <br />
        <label
         htmlFor="tel"
-        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+        className="block mb-2 text-sm font-medium text-tulang">
         No. Handphone
        </label>
        <input
         type="tel"
         id="tel"
         aria-describedby="helper-text-explanation"
-        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-tulang dark:focus:ring-blue-500 dark:focus:border-blue-500"
         placeholder="No. Handphone"
        />
+       <br />
        <label
         htmlFor="subject"
-        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+        className="block mb-2 text-sm font-medium text-tulang">
         Subjek
        </label>
        <input
         type="subject"
         id="subject"
         aria-describedby="helper-text-explanation"
-        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-tulang dark:focus:ring-blue-500 dark:focus:border-blue-500"
         placeholder="Subjek"
        />
+       <br />
        <label
         htmlFor="message"
-        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+        className="block mb-2 text-sm font-medium text-tulang">
         Pesan Anda
        </label>
        <textarea
@@ -79,7 +83,7 @@ const Form = async() => {
         />
         <label
          htmlFor="checkbox"
-         className="ms-2 text-sm 2xl:font-normal xl:font-extralight text-gray-900 dark:text-gray-300 text-justify">
+         className="ms-2 text-sm 2xl:font-normal xl:font-extralight text-tulang text-justify">
          Saya menyetujui untuk mengungkapkan informasi pribadi saya kepada
          Codevora Tech untuk mengidentifikasi pesan yang saya sampaikan agar
          pesan saya bisa ditindaklanjuti.

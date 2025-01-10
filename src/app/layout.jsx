@@ -27,7 +27,7 @@ const DejaVu = localfont({
 
 export const Metadata = {
  icons: "favicon.ico",
- title: "Codevora",
+ title: "Codevora Tech",
  description: "Home Page",
 };
 
@@ -46,12 +46,13 @@ export default function RootLayout({children}) {
   <html
    lang="en"
    className={"${DejaVu.variable} !scroll-smooth "}>
-   <head></head>
+   <head>
    <body className="bg-tulang">
     {!disableNavbar.includes(pathname) && <Navbar />}
     {children}
     {!disableFooter.includes(pathname) && <Footer />}
    </body>
+   </head>
   </html>
  );
 }
