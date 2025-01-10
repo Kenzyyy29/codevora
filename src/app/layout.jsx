@@ -1,16 +1,16 @@
 "use client";
 
 import "./globals.css";
+import {MetaData} from "next";
 import localfont from "next/font/local";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import {MetaData} from "next";
 import Link from "next/link";
 import {usePathname, useRouter} from "next/navigation";
 import {React, useEffect} from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import {icons} from "@react-icons/all-files";
 
 const disableNavbar = ["/kemitraan", "/form"];
 const disableFooter = ["/kemitraan", "/form"];
@@ -26,9 +26,9 @@ const DejaVu = localfont({
 });
 
 export const Metadata = {
- images: "../public/Codevora Logo.png",
+ icons: "favicon.ico",
  title: "Codevora",
- description: "Order Makananmu Tanpa Ribet Lagi!",
+ description: "Home Page",
 };
 
 export default function RootLayout({children}) {
@@ -46,6 +46,7 @@ export default function RootLayout({children}) {
   <html
    lang="en"
    className={"${DejaVu.variable} !scroll-smooth "}>
+   <head></head>
    <body className="bg-tulang">
     {!disableNavbar.includes(pathname) && <Navbar />}
     {children}
