@@ -51,11 +51,15 @@ export default function RootLayout({children}) {
     <title>Codevora</title>
     <meta
      name="description"
-     content="Selamat datang di halaman utama Codevora."
+     content="Solusi digital terbaik untuk segala kebutuhan bisnis anda."
     />
     <meta
      name="viewport"
      content="width=device-width, initial-scale=1"
+    />
+    <link
+     rel="icon"
+     href="/favicon.ico"
     />
    </head>
    <body className="bg-tulang">
