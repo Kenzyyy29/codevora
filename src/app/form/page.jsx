@@ -3,20 +3,12 @@ import Posts from "../../components/Posts/Posts";
 
 const baseUrl = "https://jsonplaceholder.typicode.com/posts";
 
-const Iposts ={
-  userId: Number,
-  id: Number,
-  title: String,
-  body: String
-}
 
 const Form = async() => {
   const response = await fetch(baseUrl);
-  const posts: Iposts = await response.json();
  return (
   <>
    <CardList>
-    <p>{posts[0].title}</p>
     <div>
      <div className="  max-w-[35%] py-4 space-y-5 rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5">
       <form className="max-w-lg mx-auto">
