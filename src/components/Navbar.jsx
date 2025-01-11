@@ -58,7 +58,7 @@ const products = [
 ];
 const callsToAction = [
  {name: "Layanan Pengaduan", href: "/form", icon: PlayCircleIcon},
- {name: "Hubungi Kami", href: "#", icon: PhoneIcon},
+ {name: "Hubungi Kami", href: "https://wa.me/6282295533992", icon: PhoneIcon},
 ];
 
 export default function Example() {
